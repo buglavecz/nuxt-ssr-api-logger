@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "my-module-playground",
+  "name": "ssr-api-logger-playground",
   "type": "module",
   "scripts": {
     "dev": "nuxi dev",

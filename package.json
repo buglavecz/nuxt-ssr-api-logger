@@ -2,7 +2,7 @@
   "name": "ssr-api-logger",
   "version": "1.0.0",
   "description": "SSR API logger module",
-  "repository": "your-org/my-module",
+  "repository": "your-org/ssr-api-logger",
   "license": "MIT",
   "type": "module",
   "exports": {
