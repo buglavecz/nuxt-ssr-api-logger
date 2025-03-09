@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-ssr-api-call-logger",
+  "name": "nuxt-ssr-api-logger",
   "version": "1.0.0",
-  "description": "Nuxt SSR API call logger module",
-  "repository": "your-org/nuxt-ssr-api-call-logger",
+  "description": "Nuxt SSR API logger",
+  "repository": "your-org/nuxt-ssr-api-logger",
   "license": "MIT",
   "type": "module",
   "exports": {

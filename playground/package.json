@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "nuxt-ssr-api-call-logger-playground",
+  "name": "nuxt-ssr-api-logger-playground",
   "type": "module",
   "scripts": {
     "dev": "nuxi dev",

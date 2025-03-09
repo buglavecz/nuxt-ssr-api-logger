@@ -5,8 +5,8 @@ export interface ModuleOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-ssr-api-call-logger',
-    configKey: 'ssrApiCallLogger',
+    name: 'nuxt-ssr-api-logger',
+    configKey: 'ssrApiLogger',
   },
   // Default configuration options of the Nuxt module
   defaults: {},
