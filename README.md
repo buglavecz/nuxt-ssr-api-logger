@@ -12,7 +12,7 @@ The Nuxt SSR API logger helps you see when your Nuxt application sends an API re
 
 ![](./assets/screenshot-1.png)
 
-- ⛰ only show log information on development mode
+- 👁️ Show log information only on development mode
 
 
 ## Quick Setup
