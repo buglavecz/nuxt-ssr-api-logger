@@ -16,18 +16,19 @@ export default defineNuxtPlugin((nuxtApp) => {
   })
   interceptor.apply()
 
-  consola.start('Start call...')
+  if (process.env.NODE_ENV === 'production')
+    return
+
+  consola.start('Start call')
   interceptor.on('request', ({ request }) => {
-    // console.log(request)
     const url = new URL(request.url)
     const isNuxtRequest = /^\/__/.test(url.pathname)
-    if (isNuxtRequest)
-    // return
-
-      consola.info(`SSR API request: ${request.url}, ${new Date().toISOString()}`)
+    if (isNuxtRequest) return
+    consola.info(`SSR API request: ${request.url}, ${new Date().toISOString()}`)
   })
 
   nuxtApp.hook('app:rendered', () => {
     interceptor.dispose()
+    consola.start('End call')
   })
 })

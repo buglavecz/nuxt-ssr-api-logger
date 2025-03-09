@@ -1,12 +1,12 @@
-import { defineNuxtModule, addPlugin, addServerPlugin, createResolver } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'my-module',
-    configKey: 'myModule',
+    name: 'ssr-api-logger',
+    configKey: 'ssrApiLogger',
   },
   // Default configuration options of the Nuxt module
   defaults: {},
@@ -15,6 +15,5 @@ export default defineNuxtModule<ModuleOptions>({
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin({ src: resolver.resolve('./runtime/plugin'), mode: 'server' })
-    // addServerPlugin(resolver.resolve('./runtime/server/plugin'))
   },
 })
