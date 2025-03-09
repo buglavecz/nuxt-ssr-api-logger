@@ -6,6 +6,7 @@
 [![Nuxt][nuxt-src]][nuxt-href]
 
 The Nuxt SSR API logger helps you see when your Nuxt application sends an API request via SSR.
+
 ![](./assets/screenshot-1.png)
 
 ## Features
