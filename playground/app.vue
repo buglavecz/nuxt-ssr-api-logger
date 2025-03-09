@@ -1,7 +1,6 @@
 <template>
   <div>
-    Nuxt module playground!
-    <br>
+    <h1>Nuxt module playground!</h1>
 
     <nuxt-page />
   </div>
