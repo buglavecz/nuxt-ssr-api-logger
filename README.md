@@ -5,7 +5,7 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-The Nuxt SSR API call logger module helps for you, that you will see when send to your Nuxt app API request through SSR. 
+The Nuxt SSR API Call Logger module helps you see when your Nuxt application sends an API request via SSR. 
 
 
 ## Features
