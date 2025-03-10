@@ -6,6 +6,9 @@ import { FetchInterceptor } from '@mswjs/interceptors/fetch'
 import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin((nuxtApp) => {
+  if (process.env.NODE_ENV === 'production')
+    return
+
   const interceptor = new BatchInterceptor({
     name: 'api-call-logger',
     interceptors: [
@@ -16,19 +19,16 @@ export default defineNuxtPlugin((nuxtApp) => {
   })
   interceptor.apply()
 
-  if (process.env.NODE_ENV === 'production')
-    return
-
-  consola.start('Start call')
+  consola.start('Start SSR...')
   interceptor.on('request', ({ request }) => {
     const url = new URL(request.url)
     const isNuxtRequest = /^\/__/.test(url.pathname)
     if (isNuxtRequest) return
-    consola.info(`SSR API request: ${request.url}, ${new Date().toISOString()}`)
+    consola.info(`API request: ${request.url}, ${new Date().toISOString()}`)
   })
 
   nuxtApp.hook('app:rendered', () => {
     interceptor.dispose()
-    consola.start('End call')
+    consola.start('End SSR')
   })
 })

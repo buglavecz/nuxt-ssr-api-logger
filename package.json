@@ -2,7 +2,7 @@
   "name": "nuxt-ssr-api-logger",
   "version": "1.0.0",
   "description": "Nuxt SSR API logger",
-  "repository": "your-org/nuxt-ssr-api-logger",
+  "repository": "buglavecz/nuxt-ssr-api-logger",
   "license": "MIT",
   "type": "module",
   "exports": {
