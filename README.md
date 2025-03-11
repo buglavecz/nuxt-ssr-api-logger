@@ -12,6 +12,7 @@ The Nuxt SSR API logger is small module and helps for you to see, when your Nuxt
 ## Features
 - 👁️ Default show log information only on development mode in your terminal
 - 🦾 Use `forceShowInProduction` module option, if you want show SSR calls in production environment
+- 🚫 Use `disable` module option, if you want disable logging
 
 
 ## Quick Setup

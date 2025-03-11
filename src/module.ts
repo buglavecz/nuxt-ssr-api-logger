@@ -4,6 +4,7 @@ import { name, version } from '../package.json'
 
 export interface ModuleOptions {
   forceShowInProduction: boolean
+  disable: boolean
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -16,6 +17,7 @@ export default defineNuxtModule<ModuleOptions>({
     },
   },
   defaults: {
+    disable: false,
     forceShowInProduction: false,
   },
   async setup(_options, _nuxt) {
