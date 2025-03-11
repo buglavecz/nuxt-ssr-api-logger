@@ -22,8 +22,8 @@ export default defineNuxtModule<ModuleOptions>({
     const { resolve } = createResolver(import.meta.url)
 
     const moduleOptions = defu(
-      _nuxt.options.runtimeConfig.public.ssrApiLogger,
-      _options,
+      _nuxt.options.runtimeConfig.public.ssrApiLogger || {},
+      { ..._options },
     )
     _nuxt.options.runtimeConfig.public.ssrApiLogger = moduleOptions
 
