@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.3.0
+
+[compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v1.2.0...v1.3.0)
+
+### 🚀 Enhancements
+
+- Add disable option and request counter ([26b308b](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/26b308b))
+
+### ❤️ Contributors
+
+- Peter Buglavecz <buggio.dev@gmail.com>
+
 ## v1.2.0
 
 [compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v1.1.0...v1.2.0)
