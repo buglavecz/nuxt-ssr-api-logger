@@ -1,24 +1,32 @@
+import { defu } from 'defu'
 import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { name, version } from '../package.json'
 
-// Module options TypeScript interface definition
 export interface ModuleOptions {
-  meta: {
-    name: string
-    configKey: string
-  }
+  forceShowInProduction: boolean
 }
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-ssr-api-logger',
+    name,
+    version,
     configKey: 'ssrApiLogger',
+    compatibility: {
+      nuxt: '>=3.16.0',
+    },
   },
-  // Default configuration options of the Nuxt module
-  defaults: {},
-  setup(_options, _nuxt) {
-    const resolver = createResolver(import.meta.url)
+  defaults: {
+    forceShowInProduction: false,
+  },
+  async setup(_options, _nuxt) {
+    const { resolve } = createResolver(import.meta.url)
 
-    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
-    addPlugin({ src: resolver.resolve('./runtime/plugin'), mode: 'server' })
+    const moduleOptions = defu(
+      _nuxt.options.runtimeConfig.public.ssrApiLogger,
+      _options,
+    )
+    _nuxt.options.runtimeConfig.public.ssrApiLogger = moduleOptions
+
+    addPlugin({ src: resolve('./runtime/plugin'), mode: 'server' })
   },
 })

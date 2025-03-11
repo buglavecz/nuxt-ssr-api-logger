@@ -3,10 +3,11 @@ import { BatchInterceptor } from '@mswjs/interceptors'
 import { ClientRequestInterceptor } from '@mswjs/interceptors/ClientRequest'
 import { XMLHttpRequestInterceptor } from '@mswjs/interceptors/XMLHttpRequest'
 import { FetchInterceptor } from '@mswjs/interceptors/fetch'
-import { defineNuxtPlugin } from '#app'
+import { defineNuxtPlugin, useRuntimeConfig } from '#app'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  if (process.env.NODE_ENV === 'production')
+  const { forceShowInProduction } = useRuntimeConfig().public.ssrApiLogger
+  if (process.env.NODE_ENV === 'production' && !forceShowInProduction)
     return
 
   const interceptor = new BatchInterceptor({
