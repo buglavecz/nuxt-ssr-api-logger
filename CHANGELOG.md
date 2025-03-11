@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.2.0
+
+[compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v1.1.0...v1.2.0)
+
+### 🚀 Enhancements
+
+- Add  module option ([4b6238b](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/4b6238b))
+
+### 🩹 Fixes
+
+- Module options type ([bbd03b2](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/bbd03b2))
+
+### 📖 Documentation
+
+- Update README.md ([3e57ee7](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/3e57ee7))
+
+### ❤️ Contributors
+
+- Peter Buglavecz <buggio.dev@gmail.com>
+
 ## v1.1.0
 
 
