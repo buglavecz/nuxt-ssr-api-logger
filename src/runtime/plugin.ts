@@ -21,18 +21,26 @@ export default defineNuxtPlugin((nuxtApp) => {
   interceptor.apply()
 
   let callCounter = 0
-  consola.start('Start SSR...')
+  consola.start('Start...')
+  const startTime = Date.now()
   interceptor.on('request', ({ request }) => {
     const url = new URL(request.url)
     const isNuxtRequest = /^\/__/.test(url.pathname)
     if (isNuxtRequest) return
-    consola.info(`API request: ${request.url}, ${new Date().toISOString()}`)
+
+    const isoTime = new Date().toISOString()
+    const formattedTime = isoTime.slice(11, 23)
+
+    consola.info(`${formattedTime} ${request.method} ${request.url}`)
     callCounter++
   })
 
   nuxtApp.hook('app:rendered', () => {
     interceptor.dispose()
-    consola.info(`${callCounter} request(s)`)
-    consola.start('End SSR')
+    const endTime = Date.now()
+    const totalTime = endTime - startTime
+    const avgTime = totalTime / callCounter
+    consola.info(`${callCounter} request(s) made during SSR in ${totalTime}ms (avg: ${Math.round(avgTime)}ms/request)`)
+    consola.start('End')
   })
 })

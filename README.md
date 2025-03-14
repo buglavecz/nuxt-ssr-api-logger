@@ -5,15 +5,14 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-The Nuxt SSR API logger is small module and helps for you to see, when your Nuxt application send any API request via SSR. 
+The Nuxt SSR API logger is a small module that helps you see when your Nuxt application sends any API request via SSR, including calls made with Nuxt 3 data fetching functions like `useFetch`, `$fetch` and `fetch`.
 
 ![](./assets/screenshot-1.png)
 
 ## Features
-- 👁️ Default show log information only on development mode in your terminal
-- 🦾 Use `forceShowInProduction` module option, if you want show SSR calls in production environment
-- 🚫 Use `disable` module option, if you want disable logging
-
+- 👁️ By default, log information is only shown in the terminal during development mode.
+- 🦾 Use `forceShowInProduction` module option, if you want to show SSR calls in production environment.
+- 🚫 Use `disable` module option, if you want to disable logging.
 
 ## Quick Setup
 
