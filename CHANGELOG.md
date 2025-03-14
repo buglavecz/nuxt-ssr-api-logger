@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.4.0
+
+[compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v1.3.0...v1.4.0)
+
+### 🚀 Enhancements
+
+- Add keywords to pckg.json + add avg req. time ([c5ee77f](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/c5ee77f))
+
+### ❤️ Contributors
+
+- Peter Buglavecz <buggio.dev@gmail.com>
+
 ## v1.3.0
 
 [compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v1.2.0...v1.3.0)
