@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.4.2
+
+[compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v1.4.1...v1.4.2)
+
+### 🏡 Chore
+
+- Update nuxt deps ([042be49](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/042be49))
+- Add test component ([e83d627](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/e83d627))
+
+### ❤️ Contributors
+
+- Peter Buglavecz <buggio.dev@gmail.com>
+
 ## v1.4.1
 
 [compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v1.4.0...v1.4.1)
