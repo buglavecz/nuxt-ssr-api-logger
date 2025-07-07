@@ -37,10 +37,15 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   nuxtApp.hook('app:rendered', () => {
     interceptor.dispose()
-    const endTime = Date.now()
-    const totalTime = endTime - startTime
-    const avgTime = totalTime / callCounter
-    consola.info(`${callCounter} request(s) made during SSR in ${totalTime}ms (avg: ${Math.round(avgTime)}ms/request)`)
+    if (callCounter) {
+      const endTime = Date.now()
+      const totalTime = endTime - startTime
+      const avgTime = totalTime / callCounter
+      consola.info(`${callCounter} request(s) made during SSR in ${totalTime}ms (avg: ${Math.round(avgTime)}ms/request)`)
+    }
+    else {
+      consola.info('There was no request sent.')
+    }
     consola.start('End')
   })
 })
