@@ -1,6 +1,6 @@
 {
   "name": "nuxt-ssr-api-logger",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Nuxt module for logging SSR API requests.",
   "keywords": [
     "nuxt",

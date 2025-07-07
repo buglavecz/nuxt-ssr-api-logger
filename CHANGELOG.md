@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.4.1
+
+[compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v1.4.0...v1.4.1)
+
+### 🩹 Fixes
+
+- Handle case when no request is sent ([991a8c7](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/991a8c7))
+
+### ❤️ Contributors
+
+- Peter Buglavecz <buggio.dev@gmail.com>
+
 ## v1.4.0
 
 [compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v1.3.0...v1.4.0)
