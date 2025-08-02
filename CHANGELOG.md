@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.0.1
+
+[compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v2.0.0...v2.0.1)
+
+### 🏡 Chore
+
+- Update module deps ([9a6a3a5](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/9a6a3a5))
+
+### ❤️ Contributors
+
+- Peter Buglavecz ([@buglavecz](https://github.com/buglavecz))
+
 ## v2.0.0
 
 [compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v1.4.2...v2.0.0)
