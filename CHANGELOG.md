@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v2.0.0
+
+[compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v1.4.2...v2.0.0)
+
+### 🚀 Enhancements
+
+- ⚠️  Change nuxt compatibility mode to v4 ([2592931](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/2592931))
+
+### 🏡 Chore
+
+- Update nuxt to v4 ([d3eef3d](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/d3eef3d))
+- Add nuxt v4 compatibility version range ([427939a](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/427939a))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Change nuxt compatibility mode to v4 ([2592931](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/2592931))
+
+### ❤️ Contributors
+
+- Peter Buglavecz ([@buglavecz](http://github.com/buglavecz))
+
 ## v1.4.2
 
 [compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v1.4.1...v1.4.2)
