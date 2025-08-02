@@ -13,7 +13,7 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: 'ssrApiLogger',
     compatibility: {
-      nuxt: '>=3.16.0',
+      nuxt: '>=3.16.0 <4.1.0',
     },
   },
   defaults: {
