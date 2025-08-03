@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.0.2
+
+[compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v2.0.1...v2.0.2)
+
+### 🏡 Chore
+
+- Set correct compatibility semver version to nuxt 3 and 4 ([64993b1](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/64993b1))
+
+### ❤️ Contributors
+
+- Peter Buglavecz ([@buglavecz](https://github.com/buglavecz))
+
 ## v2.0.1
 
 [compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v2.0.0...v2.0.1)
