@@ -40,23 +40,23 @@
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
   "dependencies": {
-    "@mswjs/interceptors": "^0.28.4",
+    "@mswjs/interceptors": "^0.41.3",
     "defu": "^6.1.4"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.6.2",
-    "@nuxt/eslint-config": "^1.7.1",
-    "@nuxt/kit": "^4.0.2",
+    "@nuxt/eslint-config": "^1.15.2",
+    "@nuxt/kit": "^4.4.2",
     "@nuxt/module-builder": "^1.0.2",
-    "@nuxt/schema": "^4.0.2",
-    "@nuxt/test-utils": "^3.19.2",
+    "@nuxt/schema": "^4.4.2",
+    "@nuxt/test-utils": "^4.0.0",
     "@types/node": "latest",
     "changelogen": "^0.6.2",
-    "eslint": "^9.32.0",
-    "nuxt": "^4.0.2",
-    "typescript": "~5.8.3",
-    "vitest": "^3.2.4",
-    "vue-tsc": "^3.0.4"
+    "eslint": "^9.39.4",
+    "nuxt": "^4.4.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.2",
+    "vue-tsc": "^3.2.6"
   },
   "pnpm": {
     "ignoredBuiltDependencies": [
