@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v2.0.3
+
+[compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v2.0.2...v2.0.3)
+
+### 🏡 Chore
+
+- **release:** V2.0.2 ([5b3d369](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/5b3d369))
+- Update dependencies ([3582da8](https://github.com/buglavecz/nuxt-ssr-api-logger/commit/3582da8))
+
+### ❤️ Contributors
+
+- Buglavecz ([@buglavecz](https://github.com/buglavecz))
+- Peter Buglavecz ([@buglavecz](https://github.com/buglavecz))
+
 ## v2.0.2
 
 [compare changes](https://github.com/buglavecz/nuxt-ssr-api-logger/compare/v2.0.1...v2.0.2)
